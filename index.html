@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ROBED | Robo Cat Super Intelligence</title>
+<title>ROBED | Robo Doge Super Intelligence</title>
 <meta name="description" content="802 animated robo dogs on Ink. Art reveals Oct 19, 08:02 GMT+8.">
 <link rel="icon" href="assets/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
   <section class="hero">
     <img class="hero__logo" src="assets/logo.jpg" alt="ROBED mask logo" width="230" height="230">
     <h1 class="hero__title">ROBED</h1>
-    <p class="hero__sub">Robo Cat Super Intelligence. 802 animated robo cats on Ink.</p>
+    <p class="hero__sub">Robo Doge Super Intelligence. 802 animated robo dogs on Ink.</p>
     <p class="hero__when" id="reveal-label"></p>
     <div class="countdown" id="countdown" aria-live="off">
       <div class="cd"><b data-cd="d">--</b><span>days</span></div>
@@ -37,7 +37,7 @@
   </section>
   <section class="section" aria-labelledby="t-status">
     <h2 id="t-status">Where is my art?</h2>
-    <p class="muted">Minting and revealing are two steps. Your robo cat shows as awaiting reveal until the art drops.</p>
+    <p class="muted">Minting and revealing are two steps. Your robo doge shows as awaiting reveal until the art drops.</p>
     <ol class="steps">
       <li class="step step--done"><b>Minted</b><span>Done. All 802 are minted out.</span></li>
       <li class="step step--now"><b>Awaiting reveal</b><span>Can stay pending if the randomness reserve is empty or the provider has not processed your token yet.</span></li>
@@ -61,11 +61,15 @@
   </section>
   <section class="section" aria-labelledby="t-pack">
     <h2 id="t-pack">The pack</h2>
-    <div class="gallery">
-      <img src="assets/placeholder.jpg" alt="Placeholder art" loading="lazy">
-      <img src="assets/placeholder.jpg" alt="Placeholder art" loading="lazy" class="dim">
+    <div class="slider" role="region" aria-roledescription="carousel" aria-label="ROBED art samples">
+      <ul class="slider__track" id="slider-track" tabindex="0"></ul>
+      <div class="slider__bar">
+        <button class="btn btn--ghost slider__btn" id="slider-prev" type="button" aria-label="Previous art">&larr;</button>
+        <span class="fine" id="slider-count" aria-live="polite"></span>
+        <button class="btn btn--ghost slider__btn" id="slider-next" type="button" aria-label="Next art">&rarr;</button>
+      </div>
     </div>
-    <p class="fine" id="gallery-note">Placeholder art until the reveal.</p>
+    <p class="fine" id="gallery-note">Sample art from the collection. Swipe to see more.</p>
     <form class="lookup" id="lookup">
       <label for="tid">Find your ROBED by token ID</label>
       <div class="lookup__row">
@@ -80,7 +84,7 @@
   </section>
 </main>
 <footer class="foot">
-  An independently created tribute to Alex Henery's artwork. Trust only the contract address above.
+  An independently created tribute to Alex Henery's artwork. No affiliation or endorsement is claimed. Trust only the contract address above.
 </footer>
 <script type="module" src="js/main.js"></script>
 </body>

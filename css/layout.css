@@ -5,6 +5,5 @@ main,.foot{max-width:640px;margin:0 auto}
 .section{padding:28px 20px}
 .cta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
 .tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .foot{padding:24px 20px;border-top:1px solid var(--line);font-size:.8rem;color:var(--dim)}
 @media (min-width:640px){.tiles{grid-template-columns:repeat(4,1fr)}}

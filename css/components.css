@@ -25,10 +25,19 @@ body[data-state="revealed"] .step--next span{color:var(--muted)}
 .contract{margin-top:10px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
 .contract span{display:block;font-size:.75rem;color:var(--muted);margin-bottom:6px}
 .contract code{display:block;font:.8rem var(--mono);word-break:break-all;margin-bottom:10px}
-.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
-.gallery .dim{opacity:.5}
 .lookup label{display:block;font-size:.85rem;color:var(--muted);margin-bottom:6px}
 .lookup__row{display:flex;gap:8px}
 .lookup input{flex:1;min-width:0;min-height:48px;background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:0 12px;font:1rem var(--body)}
 .module{border:1px dashed #3B2B66;border-radius:12px;padding:14px;color:var(--dim);margin-bottom:10px}
 .module--live{border-style:solid;border-color:var(--violet);color:var(--text)}
+.slider__track{list-style:none;margin:0 -20px;padding:0 20px;display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-behavior:smooth}
+.slider__track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 72%;max-width:280px;scroll-snap-align:start}
+.slide img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;border:1px solid var(--line);background:var(--panel)}
+.slide a{text-decoration:none}
+.slide figcaption{font:.75rem var(--mono);color:var(--muted);margin-top:6px}
+.slide{margin:0}
+.slider__bar{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+.slider__btn{width:48px;padding:0}
+.slider__btn:disabled{opacity:.35;cursor:default}
+@media (prefers-reduced-motion:reduce){.slider__track{scroll-behavior:auto}}
